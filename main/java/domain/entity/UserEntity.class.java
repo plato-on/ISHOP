@@ -1,8 +1,8 @@
-package Entity;
+package domain.entity;
 
 import java.util.ArrayList;
 
-public class User {
+class UserEntity {
     String name;
     int age;
     boolean isOnline;
