@@ -1,4 +1,4 @@
 package domain.service;
 
-class ItemEditor {
+class GoodService {
 }
