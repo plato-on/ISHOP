@@ -1,4 +1,4 @@
-package Entity;
+package ru.platon.domain.entity;
 
 import Service.ItemEditor;
 
