@@ -1,8 +1,6 @@
 package ru.platon.domain.entity;
 
-import Service.CategoryEditor;
-
-public class Category extends CategoryEditor {
+public class CategoryEntity {
     String name;
     String type; //season, casual
 }

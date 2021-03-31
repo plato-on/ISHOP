@@ -1,8 +1,6 @@
 package ru.platon.domain.entity;
 
-import java.util.ArrayList;
-
-public class User {
+public class UserEntity {
     String name;
     int age;
     boolean isOnline;

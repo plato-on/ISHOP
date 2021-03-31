@@ -1,5 +1,4 @@
 package ru.platon.domain.entity;
 
-public class Admin {
-
+public class OrderEntity {
 }
