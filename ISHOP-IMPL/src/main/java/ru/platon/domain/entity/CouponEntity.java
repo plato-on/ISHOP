@@ -1,5 +1,6 @@
 package ru.platon.domain.entity;
 
-public class CouponEntity {
-
+class CouponEntity {
+    int id;
+    String name;
 }

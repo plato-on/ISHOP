@@ -1,6 +1,6 @@
 package ru.platon.domain.entity;
 
-public class CategoryEntity {
+class CategoryEntity {
+    int id;
     String name;
-    String type; //season, casual
 }

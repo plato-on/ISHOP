@@ -1,4 +1,4 @@
 package ru.platon.service;
 
-public interface CategoryService {
+class CategoryService {
 }
