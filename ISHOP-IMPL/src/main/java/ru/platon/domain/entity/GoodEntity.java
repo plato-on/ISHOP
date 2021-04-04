@@ -1,10 +1,10 @@
 package ru.platon.domain.entity;
 
 class GoodEntity  {
-    int id;
-    String name;
-    int amount;
-    int price;
+    private int id;
+    private String name;
+    private int amount;
+    private int price;
     boolean availability;
-    int category_id;
+    private int category_id;
 }

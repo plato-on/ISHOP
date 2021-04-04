@@ -1,11 +1,11 @@
 package ru.platon.domain.entity;
 
 class UserEntity {
-    int id;
-    String name;
-    //int role_id;
-    int age;
-    String phoneNumber;
-    String address;
-    int favouriteCategory_id;
+    private int id;
+    private String name;
+    //private int role_id;
+    private int age;
+    private String phoneNumber;
+    private String address;
+    private int favouriteCategory_id;
 }

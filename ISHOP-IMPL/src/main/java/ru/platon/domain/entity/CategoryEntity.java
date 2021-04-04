@@ -1,6 +1,6 @@
 package ru.platon.domain.entity;
 
 class CategoryEntity {
-    int id;
-    String name;
+    private int id;
+    private String name;
 }

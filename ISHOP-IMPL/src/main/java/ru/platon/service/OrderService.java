@@ -1,4 +1,4 @@
 package ru.platon.service;
 
-class OrderService {
+interface OrderService {
 }
