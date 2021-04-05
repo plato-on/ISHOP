@@ -3,9 +3,17 @@ package ru.platon.domain.entity;
 import java.util.Date;
 
 class OrderEntity {
-    private int id;
+    private OrderEntity orderEntity;
     private String name;
-    private int coupon_id;
-    private int status_id;
-    private Date order_date;
+    private CouponEntity couponEntity;
+    private Enum orderStatus;
+    private Date orderDate;
+}
+
+enum OrderStatus {
+    CREATED,
+    PAY_WAITING,
+    SENT,
+    PICK_WAITING,
+    DELIVERED
 }
