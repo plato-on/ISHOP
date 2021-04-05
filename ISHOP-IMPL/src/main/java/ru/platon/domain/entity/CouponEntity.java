@@ -3,7 +3,7 @@ package ru.platon.domain.entity;
 import java.util.ArrayList;
 
 class CouponEntity {
-    private CouponEntity couponEntity;
+    private int id;
     private String name;
     ArrayList<OrderEntity> orderEntities;
 }

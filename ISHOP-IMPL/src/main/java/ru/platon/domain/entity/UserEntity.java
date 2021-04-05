@@ -6,5 +6,5 @@ class UserEntity {
     private int age;
     private String phoneNumber;
     private String address;
-    private CategoryEntity categoryEntity;
+    private CategoryEntity favouriteCategory;
 }

@@ -1,13 +1,14 @@
 package ru.platon.domain.entity;
 
-import java.util.Date;
+import java.time.OffsetDateTime;
 
 class OrderEntity {
+    private int id;
     private OrderEntity orderEntity;
     private String name;
     private CouponEntity couponEntity;
     private Enum orderStatus;
-    private Date orderDate;
+    private OffsetDateTime orderDate;
 }
 
 enum OrderStatus {
