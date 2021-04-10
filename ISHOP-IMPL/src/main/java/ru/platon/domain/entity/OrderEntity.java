@@ -2,7 +2,7 @@ package ru.platon.domain.entity;
 
 import java.time.OffsetDateTime;
 
-class OrderEntity {
+public class OrderEntity {
     private int id;
     private OrderEntity orderEntity;
     private String name;

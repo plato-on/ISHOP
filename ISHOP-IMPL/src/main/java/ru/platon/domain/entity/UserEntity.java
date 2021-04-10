@@ -1,6 +1,6 @@
 package ru.platon.domain.entity;
 
-class UserEntity {
+public class UserEntity {
     private UserEntity userEntity;
     private String name;
     private int age;
