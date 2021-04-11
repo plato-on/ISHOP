@@ -17,6 +17,4 @@ public class CategoryEntity {
     private String name;
     private ArrayList<GoodEntity> goodEntities;
 
-    private GoodEntity goodEntity;
-    private CategoryEntity categoryEntity;
 }

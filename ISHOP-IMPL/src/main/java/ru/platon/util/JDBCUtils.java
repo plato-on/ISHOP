@@ -1,5 +1,7 @@
 package ru.platon.util;
 
+import lombok.experimental.UtilityClass;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
