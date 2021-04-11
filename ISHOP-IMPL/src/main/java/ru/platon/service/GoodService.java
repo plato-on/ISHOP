@@ -1,4 +1,4 @@
 package ru.platon.service;
 
-interface GoodService {
+public interface GoodService {
 }

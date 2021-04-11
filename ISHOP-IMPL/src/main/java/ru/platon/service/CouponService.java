@@ -1,4 +1,4 @@
 package ru.platon.service;
 
-interface CouponService {
+public interface CouponService {
 }
