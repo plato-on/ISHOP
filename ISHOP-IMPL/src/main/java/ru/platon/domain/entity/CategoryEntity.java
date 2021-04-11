@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 @Data
 public class CategoryEntity implements CRUDRepository {
-    private int id;
+    private Long id;
     private String name;
     private ArrayList<GoodEntity> goodEntities;
 
@@ -21,22 +21,26 @@ public class CategoryEntity implements CRUDRepository {
 
     @Override
     public Object readById(Long id) {
-        return null;
+        return new CategoryEntity(id);
     }
 
     @Override
     public void update(Object o) {
-
+        o = new CategoryEntity(categoryEntity.id, categoryEntity.name, categoryEntity.goodEntities);
     }
 
     @Override
-    public void delete(Object o) {
-
+    public void delete(Long id) {
+        categoryEntity.id = null;
     }
 
-    public CategoryEntity(int id, String name, ArrayList<GoodEntity> goodEntities) {
+    private CategoryEntity(Long id, String name, ArrayList<GoodEntity> goodEntities) {
         this.id = id;
         this.name = name;
-        this.categoryEntity = categoryEntity;
+        this.goodEntities = goodEntities;
+    }
+
+    private CategoryEntity(Long id) {
+        this.id = id;
     }
 }
