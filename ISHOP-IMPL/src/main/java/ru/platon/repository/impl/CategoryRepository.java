@@ -11,10 +11,9 @@ import java.sql.Statement;
 public class CategoryRepository implements CRUDRepository<CategoryEntity> {
 
     @Override
-    public void create(CategoryEntity categoryEntity) {
+    public void create(String query) {
 
         Statement statement = JDBCUtils.createStatement();
-        String query = String.format("INSERT category(id, name, goodEntity) VALUES (%s, %s, %s)", categoryEntity.getId(), categoryEntity.getName(), categoryEntity.getGoodEntities());
 
         if (statement == null) {
             System.out.println("Отсутствует соединение с базой данных");
@@ -31,10 +30,9 @@ public class CategoryRepository implements CRUDRepository<CategoryEntity> {
     }
 
     @Override
-    public CategoryEntity readById(Long id) {
+    public CategoryEntity readById(String query) {
 
         Statement statement = JDBCUtils.createStatement();
-        String query = String.format("SELECT * FROM category c where c.id = %d", id);
 
         if (statement == null) {
             System.out.println("Отсутствует соединение с базой данных");
@@ -44,11 +42,11 @@ public class CategoryRepository implements CRUDRepository<CategoryEntity> {
         CategoryEntity resultEntity = new CategoryEntity();
 
         try {
-            ResultSet rs = statement.executeQuery(query);
+            ResultSet resultSet = statement.executeQuery(query);
 
             resultEntity
-                    .setId(rs.getLong("id"))
-                    .setName(rs.getString("name"));
+                    .setId(resultSet.getLong("id"))
+                    .setName(resultSet.getString("name"));
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -57,13 +55,12 @@ public class CategoryRepository implements CRUDRepository<CategoryEntity> {
     }
 
     @Override
-    public void update(Long id, String name, String goodEntities) {
+    public void update(String query) {
 
         Statement statement = JDBCUtils.createStatement();
-        String query = String.format("UPDATE category SET name = %s, goodEntity = %s WHERE id = %d", name, goodEntities, id);
 
         if (statement == null) {
-            System.out.println("Отсутствует соединение с базой данных");
+            System.out.println("Отсутствует соединение с базой данных. Данные, полученные в резальтате выполнения последующих команд недействительны.");
         }
 
         try {
@@ -77,10 +74,9 @@ public class CategoryRepository implements CRUDRepository<CategoryEntity> {
     }
 
     @Override
-    public void delete(Long id) {
+    public void delete(String query) {
 
         Statement statement = JDBCUtils.createStatement();
-        String query = String.format("DELETE FROM category WHERE id = %s", id);
 
         if (statement == null) {
             System.out.println("Отсутствует соединение с базой данных");

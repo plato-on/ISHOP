@@ -4,11 +4,9 @@ import java.time.OffsetDateTime;
 
 public class OrderEntity {
     private int id;
-    private OrderEntity orderEntity;
     private String name;
-    private CouponEntity couponEntity;
-    private Enum orderStatus;
     private OffsetDateTime orderDate;
+    private Enum orderStatus;
 }
 
 enum OrderStatus {
