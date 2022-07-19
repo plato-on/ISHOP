@@ -1,3 +1,3 @@
 # ISHOP
 
-Few first steps with collaborator experience.
+Few steps with collaborator experience.
