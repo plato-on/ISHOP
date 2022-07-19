@@ -1,2 +1,3 @@
 # ISHOP
-Boop-boop, is that a promo price?
+
+Few first steps with collaborator experience.
